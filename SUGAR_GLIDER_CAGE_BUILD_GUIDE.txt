@@ -1,6 +1,6 @@
 ═══════════════════════════════════════════════════════════════════════════════
   EPIC SUGAR GLIDER CAGE BUILD — MAXIMUM EFFICIENCY PROTOCOL
-  Cage Size: 48" (L) × 32" (W) × 32" (H)
+  Cage Size: 55 3/8" (L) × 36 7/8" (W) × 54" (H)
   Build Time: 120 minutes (2 hours)
   Gliders Arriving: SOON. MOVE FAST.
 ═══════════════════════════════════════════════════════════════════════════════
@@ -32,36 +32,36 @@ EXACT PVC CUTTING SPECS (MEASURE TWICE, CUT ONCE):
 
 VERTICAL POSTS (4 total):
   Size: 2" diameter PVC
-  Length: 32" each
+  Length: 54" each
   Quantity: 4 pieces
   Cut angle: STRAIGHT (90°, no bevels)
 
 HORIZONTAL FRAME - LENGTH (Front & Back):
   Size: 1.5" diameter PVC
-  Length: 48" each
+  Length: 55 3/8" each
   Quantity: 4 pieces (2 top, 2 bottom, front pair + back pair)
 
 HORIZONTAL FRAME - WIDTH (Left & Right sides):
   Size: 1.5" diameter PVC
-  Length: 32" each
+  Length: 36 7/8" each
   Quantity: 4 pieces (2 top, 2 bottom, left pair + right pair)
 
 INTERNAL BRACING (CRITICAL for structural integrity):
   Size: 1" diameter PVC
-  Length: 22" each
+  Length: 25 3/8" each
   Quantity: 4 pieces (horizontal cross-braces, one per wall interior side)
-  Position: 16" from bottom (middle height)
+  Position: 27" from bottom (middle height)
 
 OPTIONAL CLIMBING PERCHES:
   Size: 0.75" diameter PVC
-  Lengths: Cut 3 pieces at 24" each, 3 pieces at 16" each
+  Lengths: Cut 3 pieces at 27 11/16" each, 3 pieces at 18 7/16" each
   (These install AFTER main frame, within 30 mins before gliders arrive)
 
 
 MESH SCREENING:
   Type: Plastic mesh screening (window screen material)
-  Total needed: ~60-70 sq ft (to cover 4 walls)
-  Calculation: (48+32+48+32) × 32" height = ~5,120 sq inches ÷ 144 = ~35 sq ft
+  Total needed: ~90-100 sq ft (to cover 4 walls)
+  Calculation: (55.375+36.875+55.375+36.875) × 54" height = ~8,424 sq inches ÷ 144 = ~58 sq ft
   (Get extra for overlap and mistakes)
 
 ZIP TIES:
@@ -77,10 +77,10 @@ CUTTING SEQUENCE (FASTEST METHOD):
 3. Cut all 1" bracing pieces (4 cuts, ~3 min)
 4. Cut optional perches (6 cuts, ~4 min)
 5. Cut mesh screening into 4 wall panels (~5 min)
-   - Front: 48" × 32"
-   - Back: 48" × 32"
-   - Left: 32" × 32"
-   - Right: 32" × 32"
+   - Front: 55 3/8" × 54"
+   - Back: 55 3/8" × 54"
+   - Left: 36 7/8" × 54"
+   - Right: 36 7/8" × 54"
 
 
 ═══════════════════════════════════════════════════════════════════════════════
@@ -96,8 +96,8 @@ This creates the cage base. Work on flat ground.
 
 Layout:
   - Place 4 vertical 2" posts on flat surface, forming a rectangle
-  - Posts position: corners of 48" × 32" rectangle
-  - Corner spacing: Exactly 48" × 32" apart (measure carefully)
+  - Posts position: corners of 55 3/8" × 36 7/8" rectangle
+  - Corner spacing: Exactly 55 3/8" × 36 7/8" apart (measure carefully)
 
 Connect bottom:
   1. Apply PVC glue to one end of a 1.5" horizontal piece (48" length)
@@ -252,8 +252,8 @@ PART 4: ACCESS DOOR INSTALLATION (10 MINUTES)
 DOOR SIZE & POSITION:
 ─────────────────────
   - Location: Front wall, centered
-  - Height: 20" tall × 16" wide
-  - Center point: 16" from left edge, 12" from bottom
+  - Height: 33 3/4" tall × 18 7/16" wide
+  - Center point: 27 11/16" from left edge, 18 7/16" from bottom
 
 WHY THIS SIZE: Large enough for hands/supplies to reach inside, small enough
 that your 2-3 gliders can't easily escape if door briefly opens.
@@ -264,8 +264,8 @@ DOOR CONSTRUCTION:
 Simple hinged frame:
 
   1. Cut 4 pieces of 0.75" PVC:
-     - 2 pieces at 20" (vertical sides)
-     - 2 pieces at 16" (horizontal sides)
+     - 2 pieces at 33 3/4" (vertical sides)
+     - 2 pieces at 18 7/16" (horizontal sides)
 
   2. Glue these 4 pieces into a rectangle frame
   3. Attach mesh screening to this rectangle (zip tie, same as walls)
@@ -297,14 +297,14 @@ PERCH INSTALLATION:
 ───────────────────
 
 Horizontal Cross-Perches (inside cage):
-  1. Take 0.75" PVC perch pieces (24" lengths)
+  1. Take 0.75" PVC perch pieces (27 11/16" lengths)
   2. Position horizontally inside cage, at varying heights
   3. Attach to left and right internal posts using zip ties
-  4. Position: One at 8" height, one at 16", one at 24"
+  4. Position: One at 13 1/2" height, one at 27", one at 40 1/2"
   5. Use 2-3 zip ties per perch (top, middle, bottom)
 
 Vertical Climbing Sticks (inside cage):
-  1. Take 0.75" PVC pieces (16" lengths)
+  1. Take 0.75" PVC pieces (18 7/16" lengths)
   2. Position vertically along interior walls
   3. Zip tie every 6 inches to wall mesh
   4. Create 2-3 vertical paths for climbing
@@ -313,7 +313,7 @@ Sleeping Box (if time):
   1. Cut 6" diameter PVC section (about 8" long) from spare PVC
   2. Seal one end with PVC cap
   3. Add entrance hole (2" diameter, drilled on side)
-  4. Zip tie inside cage, positioned 24" high on back wall
+  4. Zip tie inside cage, positioned 40 1/2" high on back wall
   5. Line with fleece/cloth for comfort
 
 
