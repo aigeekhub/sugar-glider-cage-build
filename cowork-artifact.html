@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Glider Cage Build Guide - Complete Tutorial</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --primary: #00d9ff;
+            --primary-dark: #0099cc;
+            --bg-dark: #0f1419;
+            --bg-card: #1a202c;
+            --text-primary: #ffffff;
+            --text-secondary: #b0b8c1;
+            --accent: #ff006e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #00d9ff, #0099cc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+            text-shadow: 0 0 30px rgba(0, 217, 255, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+
+        .specs {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .spec-item {
+            background: rgba(0, 217, 255, 0.1);
+            border: 1px solid rgba(0, 217, 255, 0.3);
+            padding: 15px 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            font-size: 0.95rem;
+        }
+
+        .spec-item strong {
+            color: var(--primary);
+        }
+
+        /* Download Section */
+        .downloads {
+            background: rgba(26, 32, 44, 0.8);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 50px;
+            backdrop-filter: blur(20px);
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .downloads h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .download-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.2), rgba(0, 153, 204, 0.2));
+            border: 1px solid rgba(0, 217, 255, 0.4);
+            color: var(--primary);
+            padding: 15px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            display: block;
+            text-decoration: none;
+        }
+
+        .download-btn:hover {
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.4), rgba(0, 153, 204, 0.4));
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+        }
+
+        .download-btn small {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 5px;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            margin-bottom: 60px;
+        }
+
+        .timeline h2 {
+            color: var(--primary);
+            margin-bottom: 40px;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .phases {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .phase-card {
+            background: linear-gradient(135deg, rgba(26, 32, 44, 0.9), rgba(20, 25, 35, 0.9));
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(20px);
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.8s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .phase-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+        }
+
+        .phase-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 217, 255, 0.5);
+            box-shadow: 0 20px 50px rgba(0, 217, 255, 0.1);
+        }
+
+        .phase-number {
+            background: rgba(0, 217, 255, 0.2);
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .phase-card h3 {
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+        }
+
+        .phase-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .duration {
+            display: inline-block;
+            background: rgba(255, 0, 110, 0.15);
+            color: var(--accent);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        /* Content Sections */
+        .content-section {
+            background: rgba(26, 32, 44, 0.8);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(20px);
+        }
+
+        .content-section h2 {
+            color: var(--primary);
+            margin-bottom: 25px;
+            font-size: 2rem;
+        }
+
+        .content-section h3 {
+            color: var(--primary);
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .content-section ul, .content-section ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: var(--text-secondary);
+        }
+
+        .content-section li {
+            margin-bottom: 12px;
+            line-height: 1.8;
+        }
+
+        .content-section strong {
+            color: var(--primary);
+        }
+
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .spec-table th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--primary);
+            padding: 12px;
+            text-align: left;
+            border-bottom: 2px solid rgba(0, 217, 255, 0.3);
+            font-weight: 600;
+        }
+
+        .spec-table td {
+            padding: 12px;
+            border-bottom: 1px solid rgba(0, 217, 255, 0.1);
+            color: var(--text-secondary);
+        }
+
+        .spec-table tr:hover {
+            background: rgba(0, 217, 255, 0.05);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(0, 217, 255, 0.2);
+            color: var(--text-secondary);
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background: rgba(0, 255, 136, 0.2);
+            color: #00ff88;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 20px;
+            border: 1px solid rgba(0, 255, 136, 0.4);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .checkpoint {
+            background: rgba(0, 255, 136, 0.1);
+            border-left: 3px solid #00ff88;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            color: var(--text-secondary);
+        }
+
+        .warning {
+            background: rgba(255, 100, 0, 0.1);
+            border-left: 3px solid #ff6400;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            color: var(--text-secondary);
+        }
+
+        .success {
+            background: rgba(0, 255, 136, 0.1);
+            border-left: 3px solid #00ff88;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            color: #00ff88;
+        }
+
+        code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .specs {
+                gap: 15px;
+            }
+            .spec-item {
+                padding: 10px 20px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>🐭 EPIC SUGAR GLIDER CAGE BUILD</h1>
+            <p>Professional PVC Construction Guide</p>
+            <p style="font-size: 1rem; margin-top: 20px;">Complete 55&#8540;&quot; × 36&#8542;&quot; × 54" cage in 120 minutes</p>
+
+            <div class="specs">
+                <div class="spec-item"><strong>Dimensions:</strong> 55&#8540;&quot; L × 36&#8542;&quot; W × 54" H</div>
+                <div class="spec-item"><strong>Time:</strong> 120 Minutes</div>
+                <div class="spec-item"><strong>Materials:</strong> PVC Pipe + Mesh</div>
+                <div class="spec-item"><strong>Gliders:</strong> 2-4 Capacity</div>
+            </div>
+
+            <div class="status-badge">✅ READY FOR IMMEDIATE CONSTRUCTION</div>
+        </div>
+
+        <!-- Download Section -->
+        <div class="downloads">
+            <h2>📥 Download All Resources</h2>
+            <div class="download-buttons">
+                <a href="#" class="download-btn" onclick="downloadFile('SUGAR_GLIDER_CAGE_BUILD_GUIDE.txt'); return false;">
+                    📋 Build Guide (TXT)
+                    <small>21 KB - Step-by-step instructions</small>
+                </a>
+                <a href="#" class="download-btn" onclick="downloadFile('SUGAR_GLIDER_CAGE_VISUAL_TUTORIAL.html'); return false;">
+                    🎨 Visual Tutorial (HTML)
+                    <small>25 KB - Interactive guide</small>
+                </a>
+                <a href="#" class="download-btn" onclick="downloadFile('SUGAR_GLIDER_CAGE_EXECUTIVE_PRESENTATION.pptx'); return false;">
+                    📊 Executive Presentation (PPTX)
+                    <small>105 KB - Professional slides</small>
+                </a>
+                <a href="#" class="download-btn" onclick="downloadFile('SUGAR_GLIDER_CAGE_EXECUTIVE_SPECIFICATION.docx'); return false;">
+                    📄 Executive Spec (DOCX)
+                    <small>9.8 KB - Formal documentation</small>
+                </a>
+            </div>
+        </div>
+
+        <!-- Timeline Section -->
+        <div class="timeline">
+            <h2>🎯 Build Phases Timeline</h2>
+            <div class="phases">
+                <div class="phase-card">
+                    <div class="phase-number">1</div>
+                    <h3>Pre-Work Setup</h3>
+                    <p>Clear workspace, lay out materials, verify tools and glue temperature.</p>
+                    <div class="duration">⏱️ 5 minutes</div>
+                </div>
+                <div class="phase-card">
+                    <div class="phase-number">2</div>
+                    <h3>Material Cutting</h3>
+                    <p>Cut all PVC pieces to exact specifications. 4 vertical posts, 8 horizontal pieces, 4 braces.</p>
+                    <div class="duration">⏱️ 20 minutes</div>
+                </div>
+                <div class="phase-card">
+                    <div class="phase-number">3</div>
+                    <h3>Frame Assembly</h3>
+                    <p>Assemble bottom frame, align posts, add internal bracing, attach top frame.</p>
+                    <div class="duration">⏱️ 40 minutes</div>
+                </div>
+                <div class="phase-card">
+                    <div class="phase-number">4</div>
+                    <h3>Mesh Installation</h3>
+                    <p>Cover all 4 walls with plastic mesh screening, secure with zip ties.</p>
+                    <div class="duration">⏱️ 25 minutes</div>
+                </div>
+                <div class="phase-card">
+                    <div class="phase-number">5</div>
+                    <h3>Door & Final Setup</h3>
+                    <p>Install access door, add perches (optional), perform final structural checks.</p>
+                    <div class="duration">⏱️ 25 minutes</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Materials Section -->
+        <div class="content-section">
+            <h2>🛠️ Complete Materials List</h2>
+
+            <h3>PVC Pipe Requirements</h3>
+            <table class="spec-table">
+                <thead>
+                    <tr>
+                        <th>Diameter</th>
+                        <th>Length</th>
+                        <th>Quantity</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2" PVC</td>
+                        <td>32"</td>
+                        <td>4 pieces</td>
+                        <td>Vertical corner posts</td>
+                    </tr>
+                    <tr>
+                        <td>1.5" PVC</td>
+                        <td>55&#8540;&quot; & 36&#8542;&quot;</td>
+                        <td>8 pieces</td>
+                        <td>Top/bottom horizontal frames</td>
+                    </tr>
+                    <tr>
+                        <td>1" PVC</td>
+                        <td>22"</td>
+                        <td>4 pieces</td>
+                        <td>Internal bracing (critical for strength)</td>
+                    </tr>
+                    <tr>
+                        <td>0.75" PVC</td>
+                        <td>Various</td>
+                        <td>Optional</td>
+                        <td>Climbing perches & sleeping box</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Other Materials</h3>
+            <ul>
+                <li><strong>Plastic Mesh Screening:</strong> 60-70 sq ft (for all 4 walls with overlap)</li>
+                <li><strong>Cable Ties (8"):</strong> 60-80 pieces minimum</li>
+                <li><strong>PVC Cement:</strong> 1 can (room temperature)</li>
+                <li><strong>Gate Hinges:</strong> 1 pair (~$5)</li>
+                <li><strong>Barrel Bolt or Latch:</strong> 1 piece (~$3)</li>
+                <li><strong>Fleece Pouches:</strong> 2-3 for sleeping</li>
+                <li><strong>Exercise Wheel:</strong> 1 (8-10" diameter)</li>
+            </ul>
+
+            <h3>Tools Needed</h3>
+            <ul>
+                <li>PVC Cutter (hand-held or power saw)</li>
+                <li>Measuring Tape (25' minimum)</li>
+                <li>Marker (for marking cut lines)</li>
+                <li>Safety Glasses</li>
+                <li>Sandpaper (smooth cut edges)</li>
+                <li>Scissors (trim zip ties)</li>
+                <li>Level (optional, for alignment)</li>
+            </ul>
+
+            <div class="checkpoint">
+                <strong>✅ Checkpoint:</strong> Verify all materials are present before starting. Missing pieces = delays.
+            </div>
+        </div>
+
+        <!-- Phase-by-Phase Instructions -->
+        <div class="content-section">
+            <h2>📐 Detailed Assembly Instructions</h2>
+
+            <h3>PHASE 1: Material Cutting (20 minutes)</h3>
+            <p><strong>CUTTING SEQUENCE (Fastest Method):</strong></p>
+            <ol>
+                <li>Cut all 2" vertical posts first (4 cuts, ~3 min) - STRAIGHT cuts at 32" each</li>
+                <li>Cut all 1.5" horizontal pieces (8 cuts, ~5 min) - 4×55&#8540;&quot; and 4×36&#8542;&quot;</li>
+                <li>Cut all 1" bracing pieces (4 cuts, ~3 min) - 22" each</li>
+                <li>Cut optional perches (6 cuts, ~4 min) - 3×24" and 3×16"</li>
+                <li>Cut mesh screening into 4 panels (~5 min) - front/back 55&#8540;&quot;×54", sides 36&#8542;&quot;×54"</li>
+            </ol>
+
+            <div class="warning">
+                <strong>⚠️ Safety Note:</strong> After cutting, sand all cut ends smoothly. Burrs can injure sugar glider paws. Use sandpaper lightly over all cut edges.
+            </div>
+
+            <h3>PHASE 2: Frame Assembly (40 minutes)</h3>
+
+            <h4>STEP 1: Bottom Frame Assembly (10 minutes)</h4>
+            <ol>
+                <li>Place 4 vertical 2" posts on flat surface forming a 55&#8540;&quot; × 36&#8542;&quot; rectangle</li>
+                <li>Apply PVC glue to one end of first 1.5" horizontal piece (48" length)</li>
+                <li>Insert into T-joint at bottom of front-left post</li>
+                <li>Insert other end into T-joint at bottom of front-right post</li>
+                <li>HOLD for 30 seconds - glue sets initially</li>
+                <li>Repeat for back horizontal piece (48")</li>
+                <li>Connect left and right sides with 32" pieces</li>
+                <li>Let joints set for 2-3 minutes before proceeding</li>
+            </ol>
+
+            <h4>STEP 2: Vertical Post Alignment (5 minutes)</h4>
+            <ol>
+                <li>Verify all 4 posts are VERTICAL (use level if available)</li>
+                <li>Check 90° angles at base frame</li>
+                <li>Use zip ties temporarily to hold posts vertical (every 8" up)</li>
+                <li>Remove temporary ties after top frame is glued</li>
+            </ol>
+
+            <h4>STEP 3: Internal Bracing (5 minutes) - CRITICAL FOR STRENGTH</h4>
+            <ol>
+                <li>Take a 1" diameter bracing piece (22" long)</li>
+                <li>Position horizontally inside cage, 16" from bottom (mid-height)</li>
+                <li>Glue one end to interior of left post</li>
+                <li>Glue other end to interior of right post</li>
+                <li>Do this for all 4 walls (front, back, left, right)</li>
+                <li>These braces are INSIDE, not visible, but ESSENTIAL for rigidity</li>
+                <li>Let glue set 2-3 minutes</li>
+            </ol>
+
+            <h4>STEP 4: Top Frame Assembly (15 minutes)</h4>
+            <ol>
+                <li>Apply glue to top ends of all 4 vertical posts</li>
+                <li>Attach front horizontal piece (48") to front posts</li>
+                <li>Attach back horizontal piece (48") to back posts</li>
+                <li>Attach left side piece (32") to left posts</li>
+                <li>Attach right side piece (32") to right posts</li>
+                <li>Ensure top frame is LEVEL (not tilted)</li>
+                <li>Allow 3-5 minutes for glue to cure</li>
+            </ol>
+
+            <div class="success">
+                <strong>✅ Structural Check:</strong> Frame doesn't wobble, all corners are 90°, height consistent, top and bottom frames parallel.
+            </div>
+
+            <h3>PHASE 3: Mesh Screening Installation (25 minutes)</h3>
+            <p><strong>ZIP TIE METHOD (Fastest):</strong></p>
+            <ol>
+                <li>DON'T glue mesh - use zip ties for speed and easy cleaning</li>
+                <li>Line up mesh along top edge of frame</li>
+                <li>Place zip ties every 6 inches around perimeter</li>
+                <li>Tighten firmly - mesh should be taut, not loose</li>
+                <li>Zip ties go on OUTSIDE of cage</li>
+                <li>Trim excess zip tie tails with scissors</li>
+                <li>At corners, overlap mesh by 2-3 inches</li>
+                <li>Zip tie both layers together for escape-proof sealing</li>
+            </ol>
+
+            <table class="spec-table">
+                <thead>
+                    <tr>
+                        <th>Wall</th>
+                        <th>Size</th>
+                        <th>Zip Ties Needed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Front</td>
+                        <td>55&#8540;&quot; × 36&#8542;&quot;</td>
+                        <td>~28 ties</td>
+                    </tr>
+                    <tr>
+                        <td>Back</td>
+                        <td>55&#8540;&quot; × 36&#8542;&quot;</td>
+                        <td>~28 ties</td>
+                    </tr>
+                    <tr>
+                        <td>Left Side</td>
+                        <td>32" × 32"</td>
+                        <td>~24 ties</td>
+                    </tr>
+                    <tr>
+                        <td>Right Side</td>
+                        <td>32" × 32"</td>
+                        <td>~24 ties</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="checkpoint">
+                <strong>⚠️ Important:</strong> LEAVE TOP OPEN for ventilation. Do NOT cover with mesh. This is your access point for feeding and cleaning.
+            </div>
+
+            <h3>PHASE 4: Access Door Installation (10 minutes)</h3>
+            <ol>
+                <li>Door size: 20" tall × 16" wide, centered on front wall, 12" from bottom</li>
+                <li>Create door frame from 0.75" PVC (2×20" vertical, 2×16" horizontal)</li>
+                <li>Glue frame into rectangle</li>
+                <li>Attach mesh screening to door frame with zip ties</li>
+                <li>Mount to cage using two gate hinges on LEFT side</li>
+                <li>Add barrel bolt or magnetic catch on RIGHT side to latch securely</li>
+                <li>Test: door opens/closes smoothly, mesh intact, latch holds firmly</li>
+            </ol>
+
+            <h3>PHASE 5: Optional Climbing Perches (15 minutes if time allows)</h3>
+            <ol>
+                <li><strong>Horizontal perches:</strong> Position 0.75" PVC pieces at 8", 16", 24" heights</li>
+                <li><strong>Vertical climbing:</strong> Attach 16" pieces vertically along interior walls</li>
+                <li><strong>Sleeping box:</strong> Cut 6" diameter PVC section (~8" long), seal one end, drill 2" entrance hole</li>
+                <li>Zip tie everything securely in place</li>
+                <li>Line sleeping box with fleece for comfort</li>
+            </ol>
+        </div>
+
+        <!-- Final Checklist -->
+        <div class="content-section">
+            <h2>✅ Pre-Glider Arrival Checklist</h2>
+            <ul>
+                <li>☐ Frame is solid (no wobble when pushed firmly)</li>
+                <li>☐ All mesh is taut (not sagging)</li>
+                <li>☐ No gaps at corners or seams (escape-proof)</li>
+                <li>☐ Door opens/closes and latches securely</li>
+                <li>☐ Top is open (ventilation confirmed)</li>
+                <li>☐ Bracing pieces intact inside</li>
+                <li>☐ Zip ties trimmed (no sharp edges)</li>
+                <li>☐ Structure holds weight when gently pressed on top</li>
+                <li>☐ All glue joints have cured (no wet/tacky spots)</li>
+                <li>☐ Water bottle installed and full</li>
+                <li>☐ Food dishes ready and positioned</li>
+                <li>☐ Sleeping area available (pouch or box)</li>
+                <li>☐ Room temperature 65-75°F</li>
+                <li>☐ Cage in quiet, low-traffic area</li>
+                <li>☐ No direct sunlight or drafts</li>
+            </ul>
+
+            <div class="success">
+                <strong>🎉 YOU'RE READY. GLIDERS ARE COMING HOME.</strong>
+            </div>
+        </div>
+
+        <!-- Quick Reference -->
+        <div class="content-section">
+            <h2>⚡ Quick Reference: If Running Behind</h2>
+            <p><strong>Drop these in order to save time (prioritize by importance):</strong></p>
+            <ol>
+                <li>Perches (nice, not essential)</li>
+                <li>Sleeping box (hang fleece pouch instead)</li>
+                <li>Internal bracing (use single X-brace instead of 4)</li>
+                <li>Door latch (use heavy velcro - faster)</li>
+                <li>Corner sealing (single mesh layer okay)</li>
+            </ol>
+            <p style="margin-top: 20px;"><strong>MINIMUM FUNCTIONAL CAGE:</strong></p>
+            <ul>
+                <li>Frame (bottom + vertical posts + top)</li>
+                <li>Mesh on all 4 walls + zip ties</li>
+                <li>Open top</li>
+                <li>One access hole (door frame not required immediately)</li>
+            </ul>
+            <p style="margin-top: 15px; color: var(--primary); font-weight: 600;">Get this done first. Comfort features come later.</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>🐭 Sugar Glider Cage Build Guide - Complete Tutorial</strong></p>
+            <p>Professional 120-minute construction system for 55&#8540;&quot; × 36&#8542;&quot; × 32" escape-proof PVC cages</p>
+            <p style="margin-top: 20px; font-size: 0.9rem;">✨ Built with precision for your glider's safety and comfort</p>
+        </div>
+    </div>
+
+    <script>
+        // Handle file downloads
+        function downloadFile(filename) {
+            // Create a message to the user since we can't actually download in artifact context
+            alert(`
+FILE DOWNLOAD: ${filename}
+
+To download this file:
+1. Copy this filename: ${filename}
+2. The files are available in your outputs folder
+
+Files included:
+- SUGAR_GLIDER_CAGE_BUILD_GUIDE.txt (21 KB)
+- SUGAR_GLIDER_CAGE_VISUAL_TUTORIAL.html (25 KB)
+- SUGAR_GLIDER_CAGE_EXECUTIVE_PRESENTATION.pptx (105 KB)
+- SUGAR_GLIDER_CAGE_EXECUTIVE_SPECIFICATION.docx (9.8 KB)
+
+Alternatively, contact support to request a direct download link.
+            `);
+        }
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.phase-card, .content-section').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </scrip
