@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Glider Habitat - Beautiful Build Tutorial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0a0a0f 0%, #111118 100%);
+            color: #e8eaed;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ═══ HERO SECTION ═══ */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(0, 240, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(51, 102, 255, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .hero-content {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            padding: 40px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #00f0ff 0%, #3366ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(0, 240, 255, 0.3);
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+
+        .hero-stat {
+            display: inline-block;
+            margin: 0 20px;
+            padding: 15px 25px;
+            background: rgba(0, 240, 255, 0.08);
+            border: 1px solid rgba(0, 240, 255, 0.3);
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            color: #00f0ff;
+            font-weight: 600;
+        }
+
+        /* ═══ PHASE SECTIONS ═══ */
+        .phase-section {
+            padding: 80px 40px;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            max-width: 1400px;
+            margin: 0 auto;
+            border-bottom: 1px solid rgba(0, 240, 255, 0.1);
+        }
+
+        .phase-section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .phase-content {
+            flex: 1;
+            min-width: 400px;
+        }
+
+        .phase-visual {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .phase-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #00f0ff 0%, #3366ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .phase-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .phase-time {
+            display: inline-block;
+            background: rgba(255, 170, 0, 0.15);
+            color: #ffab00;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 170, 0, 0.3);
+        }
+
+        .phase-description {
+            font-size: 1.1rem;
+            color: #b0b5c0;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .checkpoint-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .checkpoint-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #b0b5c0;
+        }
+
+        .checkpoint-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #00f0ff;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* ═══ VISUALIZATION BOXES ═══ */
+        .viz-box {
+            background: linear-gradient(135deg, rgba(0, 240, 255, 0.05) 0%, rgba(51, 102, 255, 0.05) 100%);
+            border: 2px solid rgba(0, 240, 255, 0.2);
+            border-radius: 12px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .viz-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                linear-gradient(45deg, transparent 30%, rgba(0, 240, 255, 0.03) 50%, transparent 70%);
+            animation: shimmer 3s infinite;
+            pointer-events: none;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { transform: translateX(-100%); }
+            50% { transform: translateX(100%); }
+        }
+
+        svg {
+            max-width: 100%;
+            height: auto;
+            filter: drop-shadow(0 0 20px rgba(0, 240, 255, 0.2));
+        }
+
+        /* ═══ TIMELINE ═══ */
+        .timeline {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 40px;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            animation: fadeInLeft 0.6s ease-out;
+        }
+
+        .timeline-dot {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #00f0ff 0%, #3366ff 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0a0a0f;
+            font-weight: 800;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+        }
+
+        .timeline-content {
+            flex: 1;
+            padding: 20px;
+            background: rgba(0, 240, 255, 0.05);
+            border-left: 2px solid rgba(0, 240, 255, 0.3);
+            border-radius: 8px;
+        }
+
+        .timeline-content h4 {
+            color: #00f0ff;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .timeline-content p {
+            color: #b0b5c0;
+            font-size: 0.95rem;
+        }
+
+        /* ═══ MATERIALS SECTION ═══ */
+        .materials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 80px 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .material-card {
+            background: linear-gradient(135deg, rgba(0, 240, 255, 0.08) 0%, rgba(51, 102, 255, 0.08) 100%);
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            border-radius: 12px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .material-card:hover {
+            border-color: rgba(0, 240, 255, 0.5);
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .material-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .material-card h4 {
+            color: #ffffff;
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+
+        .material-card p {
+            color: #6b7280;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+
+        .material-qty {
+            color: #00f0ff;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        /* ═══ FOOTER ═══ */
+        .footer {
+            padding: 60px 40px;
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+            border-top: 1px solid rgba(0, 240, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer h2 {
+            color: #00f0ff;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .footer p {
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #00f0ff 0%, #3366ff 100%);
+            color: #0a0a0f;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px rgba(0, 240, 255, 0.5);
+        }
+
+        /* ═══ ANIMATIONS ═══ */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* ═══ RESPONSIVE ═══ */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .phase-section { flex-direction: column !important; gap: 30px; }
+            .phase-content, .phase-visual { min-width: auto; }
+            .phase-title { font-size: 1.8rem; }
+            .materials-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ═══ HERO SECTION ═══ -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>SUGAR GLIDER HABITAT</h1>
+        <p>Build a Professional-Grade Cage in 120 Minutes</p>
+        <div style="margin: 30px 0;">
+            <span class="hero-stat">48" × 32" × 32"</span>
+            <span class="hero-stat">2-3 Gliders</span>
+            <span class="hero-stat">120 Minutes</span>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ PHASE 1: PRE-WORK ═══ -->
+<section class="phase-section" style="padding-top: 100px;">
+    <div class="phase-content">
+        <div class="phase-number">01</div>
+        <h2 class="phase-title">Pre-Work Setup</h2>
+        <span class="phase-time">⏱ 5 Minutes</span>
+        <p class="phase-description">Prepare your workspace and gather all materials. This simple preparation phase ensures smooth execution.</p>
+        <ul class="checkpoint-list">
+            <li>Clear work surface (minimum 8' × 6')</li>
+            <li>Lay out ALL materials on flat ground</li>
+            <li>Have PVC cutter, measuring tape, marker ready</li>
+            <li>Put on safety glasses</li>
+            <li>Ensure PVC glue is at ROOM TEMPERATURE</li>
+            <li>Test-fit one PVC joint with glue</li>
+        </ul>
+    </div>
+    <div class="phase-visual">
+        <div class="viz-box">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" width="350">
+                <!-- Work surface -->
+                <rect x="30" y="150" width="340" height="130" fill="#1a3a52" stroke="#00f0ff" stroke-width="2" rx="8"/>
+                <text x="200" y="190" font-size="18" fill="#00f0ff" text-anchor="middle" font-weight="bold">WORK SURFACE</text>
+
+                <!-- Materials icons -->
+                <g>
+                    <circle cx="80" cy="80" r="35" fill="#3366ff" opacity="0.3" stroke="#3366ff" stroke-width="2"/>
+                    <text x="80" y="90" font-size="30" text-anchor="middle">📋</text>
+                </g>
+                <g>
+                    <circle cx="200" cy="60" r="35" fill="#00f0ff" opacity="0.3" stroke="#00f0ff" stroke-width="2"/>
+                    <text x="200" y="70" font-size="30" text-anchor="middle">🔧</text>
+                </g>
+                <g>
+                    <circle cx="320" cy="80" r="35" fill="#ffab00" opacity="0.3" stroke="#ffab00" stroke-width="2"/>
+                    <text x="320" y="90" font-size="30" text-anchor="middle">⚙️</text>
+                </g>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ PHASE 2: CUTTING ═══ -->
+<section class="phase-section">
+    <div class="phase-content">
+        <div class="phase-number">02</div>
+        <h2 class="phase-title">Material Cutting</h2>
+        <span class="phase-time">⏱ 20 Minutes</span>
+        <p class="phase-description">Cut all PVC pieces to exact specifications. Precision here prevents problems later.</p>
+        <ul class="checkpoint-list">
+            <li>Cut 4 pieces of 2" PVC at 32" each (vertical posts)</li>
+            <li>Cut 8 pieces of 1.5" PVC (4 at 48", 4 at 32")</li>
+            <li>Cut 4 pieces of 1" PVC at 22" each (bracing)</li>
+            <li>Cut mesh screening into 4 wall panels</li>
+            <li>Sand all cut ends smooth (burr removal)</li>
+            <li>Check every cut is SQUARE (90° angle)</li>
+        </ul>
+    </div>
+    <div class="phase-visual">
+        <div class="viz-box">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" width="350">
+                <!-- PVC pipes -->
+                <rect x="40" y="80" width="20" height="160" fill="#3366ff" stroke="#00f0ff" stroke-width="2" rx="5"/>
+                <text x="50" y="260" font-size="11" fill="#00f0ff" text-anchor="middle" font-weight="bold">2"</text>
+
+                <rect x="100" y="60" width="18" height="180" fill="#3366ff" stroke="#00f0ff" stroke-width="2" rx="4"/>
+                <text x="109" y="270" font-size="11" fill="#00f0ff" text-anchor="middle" font-weight="bold">1.5"</text>
+
+                <rect x="160" y="100" width="16" height="140" fill="#3366ff" stroke="#00f0ff" stroke-width="2" rx="4"/>
+                <text x="168" y="270" font-size="11" fill="#00f0ff" text-anchor="middle" font-weight="bold">1"</text>
+
+                <!-- Cutting tool -->
+                <g transform="translate(280, 150)">
+                    <circle r="30" fill="#ffab00" opacity="0.2" stroke="#ffab00" stroke-width="2"/>
+                    <text x="0" y="10" font-size="35" text-anchor="middle">✂️</text>
+                </g>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ PHASE 3: FRAME ASSEMBLY ═══ -->
+<section class="phase-section">
+    <div class="phase-content">
+        <div class="phase-number">03</div>
+        <h2 class="phase-title">Frame Assembly</h2>
+        <span class="phase-time">⏱ 40 Minutes</span>
+        <p class="phase-description">Build the cage structure in four sub-phases: bottom, alignment, bracing, and top.</p>
+        <ul class="checkpoint-list">
+            <li>Assemble bottom frame (48" × 32" rectangle)</li>
+            <li>Align vertical posts (all 90° angles)</li>
+            <li>Install internal bracing (16" height)</li>
+            <li>Attach top frame (match bottom dimensions)</li>
+            <li>Verify no wobble when pushed</li>
+            <li>Allow 3-5 minutes glue cure after each sub-phase</li>
+        </ul>
+    </div>
+    <div class="phase-visual">
+        <div class="viz-box">
+            <svg viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg" width="350">
+                <!-- 3D frame visualization -->
+                <polygon points="100,100 200,80 200,240 100,260" fill="#3366ff" opacity="0.2" stroke="#00f0ff" stroke-width="2"/>
+                <polygon points="200,80 300,70 300,230 200,240" fill="#3366ff" opacity="0.3" stroke="#00f0ff" stroke-width="2"/>
+                <polygon points="100,260 200,240 300,230 250,280" fill="#3366ff" opacity="0.15" stroke="#00f0ff" stroke-width="2"/>
+
+                <!-- Bracing cross -->
+                <line x1="120" y1="180" x2="280" y2="175" stroke="#ffab00" stroke-width="3"/>
+
+                <!-- Corner indicators -->
+                <circle cx="100" cy="100" r="6" fill="#ff2d7b"/>
+                <circle cx="300" cy="70" r="6" fill="#ff2d7b"/>
+                <circle cx="100" cy="260" r="6" fill="#ff2d7b"/>
+
+                <text x="200" y="330" font-size="14" fill="#00f0ff" text-anchor="middle" font-weight="bold">Dual-Layer Bracing</text>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ PHASE 4: MESH INSTALLATION ═══ -->
+<section class="phase-section">
+    <div class="phase-content">
+        <div class="phase-number">04</div>
+        <h2 class="phase-title">Mesh Screening</h2>
+        <span class="phase-time">⏱ 25 Minutes</span>
+        <p class="phase-description">Attach protective mesh to all four walls using zip ties. This creates the escape-proof barrier.</p>
+        <ul class="checkpoint-list">
+            <li>Install mesh on front wall (48" wide × 32" tall)</li>
+            <li>Zip tie every 5-6 inches around all edges</li>
+            <li>Mesh must be TAUT (no sagging)</li>
+            <li>Repeat for back, left, and right walls</li>
+            <li>Overlap mesh at all corners (2-3 inches)</li>
+            <li>Trim all excess zip tie tails short</li>
+            <li>Verify NO gaps larger than 0.5 inches</li>
+        </ul>
+    </div>
+    <div class="phase-visual">
+        <div class="viz-box">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" width="350">
+                <!-- Mesh pattern -->
+                <defs>
+                    <pattern id="mesh" x="0" y="0" width="15" height="15" patternUnits="userSpaceOnUse">
+                        <rect x="0" y="0" width="15" height="15" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5"/>
+                    </pattern>
+                </defs>
+
+                <rect x="50" y="50" width="300" height="200" fill="url(#mesh)" stroke="#00f0ff" stroke-width="2"/>
+
+                <!-- Zip ties -->
+                <circle cx="50" cy="80" r="4" fill="#ff2d7b" stroke="#ffab00" stroke-width="1.5"/>
+                <circle cx="110" cy="50" r="4" fill="#ff2d7b" stroke="#ffab00" stroke-width="1.5"/>
+                <circle cx="170" cy="50" r="4" fill="#ff2d7b" stroke="#ffab00" stroke-width="1.5"/>
+                <circle cx="230" cy="50" r="4" fill="#ff2d7b" stroke="#ffab00" stroke-width="1.5"/>
+                <circle cx="290" cy="50" r="4" fill="#ff2d7b" stroke="#ffab00" stroke-width="1.5"/>
+                <circle cx="350" cy="80" r="4" fill="#ff2d7b" stroke="#ffab00" stroke-width="1.5"/>
+
+                <text x="200" y="280" font-size="14" fill="#00f0ff" text-anchor="middle" font-weight="bold">100% Escape-Proof Enclosure</text>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ PHASE 5: DOOR INSTALLATION ═══ -->
+<section class="phase-section">
+    <div class="phase-content">
+        <div class="phase-number">05</div>
+        <h2 class="phase-title">Access Door</h2>
+        <span class="phase-time">⏱ 10 Minutes</span>
+        <p class="phase-description">Install the hinged access door for feeding, cleaning, and glider interaction.</p>
+        <ul class="checkpoint-list">
+            <li>Door position: 16" from left, 12" from bottom</li>
+            <li>Door size: 16" wide × 20" tall</li>
+            <li>Mount hinges on left side</li>
+            <li>Install barrel bolt or latch on right side</li>
+            <li>Door mesh must be completely intact</li>
+            <li>Test open/close and latch function</li>
+        </ul>
+    </div>
+    <div class="phase-visual">
+        <div class="viz-box">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" width="350">
+                <!-- Front panel -->
+                <rect x="80" y="50" width="240" height="200" fill="#1a3a52" stroke="#00f0ff" stroke-width="2" rx="4"/>
+
+                <!-- Door opening -->
+                <rect x="130" y="90" width="80" height="120" fill="none" stroke="#ff2d7b" stroke-width="3" stroke-dasharray="5,5"/>
+
+                <!-- Hinges -->
+                <circle cx="130" cy="110" r="5" fill="#ffab00"/>
+                <circle cx="130" cy="210" r="5" fill="#ffab00"/>
+
+                <!-- Latch -->
+                <rect x="210" y="150" width="15" height="10" fill="#ffab00" rx="2"/>
+
+                <text x="170" y="165" font-size="12" fill="#ff2d7b" text-anchor="middle" font-weight="bold">ACCESS</text>
+
+                <text x="200" y="280" font-size="14" fill="#00f0ff" text-anchor="middle" font-weight="bold">Hinged Access Panel</text>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ TIMELINE SECTION ═══ -->
+<section style="background: linear-gradient(135deg, rgba(0, 240, 255, 0.03) 0%, rgba(51, 102, 255, 0.03) 100%);">
+    <div class="timeline">
+        <h2 style="font-size: 2.2rem; margin-bottom: 40px; color: #ffffff;">
+            Build Timeline: 120 Minutes Total
+        </h2>
+
+        <div class="timeline-item">
+            <div class="timeline-dot">1</div>
+            <div class="timeline-content">
+                <h4>Pre-Work Setup</h4>
+                <p><strong>5 minutes</strong> — Clear workspace, gather materials, safety check</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot">2</div>
+            <div class="timeline-content">
+                <h4>Material Cutting</h4>
+                <p><strong>20 minutes</strong> — Cut all PVC pieces, sand smooth, verify accuracy</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot">3</div>
+            <div class="timeline-content">
+                <h4>Frame Assembly</h4>
+                <p><strong>40 minutes</strong> — Bottom frame → posts → bracing → top frame</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot">4</div>
+            <div class="timeline-content">
+                <h4>Mesh Installation</h4>
+                <p><strong>25 minutes</strong> — All four walls, zip ties every 5-6", corner overlaps</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot">5</div>
+            <div class="timeline-content">
+                <h4>Door & Final Checks</h4>
+                <p><strong>30 minutes</strong> — Door installation, structural verification, QA pass</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ MATERIALS SECTION ═══ -->
+<section>
+    <div style="text-align: center; padding: 60px 40px 40px;">
+        <h2 style="font-size: 2.2rem; color: #ffffff; margin-bottom: 15px;">What You'll Need</h2>
+        <p style="color: #6b7280; font-size: 1.1rem; margin-bottom: 40px;">Everything required for a professional build</p>
+    </div>
+
+    <div class="materials-grid">
+        <div class="material-card">
+            <div class="material-icon">🔩</div>
+            <h4>PVC Pipe (2")</h4>
+            <p>Vertical support posts</p>
+            <div class="material-qty">4 pieces × 32"</div>
+        </div>
+
+        <div class="material-card">
+            <div class="material-icon">📦</div>
+            <h4>PVC Pipe (1.5")</h4>
+            <p>Horizontal framing</p>
+            <div class="material-qty">8 pieces mixed</div>
+        </div>
+
+        <div class="material-card">
+            <div class="material-icon">✕</div>
+            <h4>PVC Pipe (1")</h4>
+            <p>Internal bracing</p>
+            <div class="material-qty">4 pieces × 22"</div>
+        </div>
+
+        <div class="material-card">
+            <div class="material-icon">🕸️</div>
+            <h4>Plastic Mesh</h4>
+            <p>All four walls</p>
+            <div class="material-qty">~70 sq ft</div>
+        </div>
+
+        <div class="material-card">
+            <div class="material-icon">⛓️</div>
+            <h4>Zip Ties (8")</h4>
+            <p>Mesh fastening</p>
+            <div class="material-qty">80-100 pieces</div>
+        </div>
+
+        <div class="material-card">
+            <div class="material-icon">🧴</div>
+            <h4>PVC Cement</h4>
+            <p>Joint bonding</p>
+            <div class="material-qty">1 bottle (~8oz)</div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<section class="footer">
+    <h2>Ready to Build?</h2>
+    <p>You have everything you need. Follow the phases, take your time, and you'll have a professional-grade habitat in two hours.</p>
+    <p style="color: #3366ff; font-weight: 700; font-size: 1.2rem; margin-top: 20px;">✓ Detailed guide • ✓ Visual instructions • ✓ Professional results</p>
+</section>
+
+</body>
+</html>

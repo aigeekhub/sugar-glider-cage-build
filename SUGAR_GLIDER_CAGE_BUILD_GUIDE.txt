@@ -1,0 +1,450 @@
+═══════════════════════════════════════════════════════════════════════════════
+  EPIC SUGAR GLIDER CAGE BUILD — MAXIMUM EFFICIENCY PROTOCOL
+  Cage Size: 48" (L) × 32" (W) × 32" (H)
+  Build Time: 120 minutes (2 hours)
+  Gliders Arriving: SOON. MOVE FAST.
+═══════════════════════════════════════════════════════════════════════════════
+
+CRITICAL PRE-WORK (DO THIS NOW — 5 MINUTES MAX)
+─────────────────────────────────────────────
+
+□ Clear work surface (at least 8' × 6' flat ground)
+□ Lay out ALL materials
+□ Have PVC cutter, measuring tape, marker ready
+□ Wear safety glasses (PVC dust/debris)
+□ Ensure PVC glue is ROOM TEMP (cold glue = weak bonds)
+□ Test-fit one joint BEFORE full assembly
+
+
+═══════════════════════════════════════════════════════════════════════════════
+PART 1: MATERIAL CUTTING PLAN (20 MINUTES)
+═════════════════════════════════════════════════════════════════════════════════
+
+WHAT YOU'RE BUILDING:
+- Four vertical corner posts (PVC pipes)
+- Top & bottom rectangular frames (PVC pipes + fittings)
+- Mesh screening attachment points
+- One swing-open access door
+
+
+EXACT PVC CUTTING SPECS (MEASURE TWICE, CUT ONCE):
+─────────────────────────────────────────────────
+
+VERTICAL POSTS (4 total):
+  Size: 2" diameter PVC
+  Length: 32" each
+  Quantity: 4 pieces
+  Cut angle: STRAIGHT (90°, no bevels)
+
+HORIZONTAL FRAME - LENGTH (Front & Back):
+  Size: 1.5" diameter PVC
+  Length: 48" each
+  Quantity: 4 pieces (2 top, 2 bottom, front pair + back pair)
+
+HORIZONTAL FRAME - WIDTH (Left & Right sides):
+  Size: 1.5" diameter PVC
+  Length: 32" each
+  Quantity: 4 pieces (2 top, 2 bottom, left pair + right pair)
+
+INTERNAL BRACING (CRITICAL for structural integrity):
+  Size: 1" diameter PVC
+  Length: 22" each
+  Quantity: 4 pieces (horizontal cross-braces, one per wall interior side)
+  Position: 16" from bottom (middle height)
+
+OPTIONAL CLIMBING PERCHES:
+  Size: 0.75" diameter PVC
+  Lengths: Cut 3 pieces at 24" each, 3 pieces at 16" each
+  (These install AFTER main frame, within 30 mins before gliders arrive)
+
+
+MESH SCREENING:
+  Type: Plastic mesh screening (window screen material)
+  Total needed: ~60-70 sq ft (to cover 4 walls)
+  Calculation: (48+32+48+32) × 32" height = ~5,120 sq inches ÷ 144 = ~35 sq ft
+  (Get extra for overlap and mistakes)
+
+ZIP TIES:
+  Length: 8" (standard cable ties)
+  Quantity: 60-80 pieces minimum
+  (You'll use them every 4-6 inches around mesh perimeter)
+
+
+CUTTING SEQUENCE (FASTEST METHOD):
+──────────────────────────────────
+1. Cut all 2" vertical posts first (4 cuts, ~3 min)
+2. Cut all 1.5" horizontal pieces (8 cuts, ~5 min)
+3. Cut all 1" bracing pieces (4 cuts, ~3 min)
+4. Cut optional perches (6 cuts, ~4 min)
+5. Cut mesh screening into 4 wall panels (~5 min)
+   - Front: 48" × 32"
+   - Back: 48" × 32"
+   - Left: 32" × 32"
+   - Right: 32" × 32"
+
+
+═══════════════════════════════════════════════════════════════════════════════
+PART 2: FRAME ASSEMBLY — STEP BY STEP (40 MINUTES)
+═════════════════════════════════════════════════════════════════════════════════
+
+ASSEMBLY ORDER (This sequence prevents mistakes):
+
+STEP 1: BOTTOM FRAME ASSEMBLY (10 minutes)
+───────────────────────────────────────────
+
+This creates the cage base. Work on flat ground.
+
+Layout:
+  - Place 4 vertical 2" posts on flat surface, forming a rectangle
+  - Posts position: corners of 48" × 32" rectangle
+  - Corner spacing: Exactly 48" × 32" apart (measure carefully)
+
+Connect bottom:
+  1. Apply PVC glue to one end of a 1.5" horizontal piece (48" length)
+  2. Insert into T-joint at bottom of front-left post
+  3. Insert other end into T-joint at bottom of front-right post
+  4. HOLD for 30 seconds (glue sets initially)
+  5. Repeat for back horizontal piece (48")
+  6. Connect left and right sides (32" pieces)
+  7. You now have a 48" × 32" rectangular frame at the base
+
+CRITICAL: Let joints set for 2-3 minutes before proceeding. Do NOT move yet.
+
+
+STEP 2: VERTICAL POST ALIGNMENT (5 minutes)
+────────────────────────────────────────────
+
+With base frame glued:
+  1. Check that all 4 posts are VERTICAL (use level if you have one)
+  2. Posts should form 90° angles with base frame
+  3. Use zip ties temporarily to hold posts vertical (every 8" up the posts)
+  4. These temporary ties come OFF after top frame is glued
+
+NOTE: Take 30 seconds to verify. Crooked posts = unstable cage. Fix now.
+
+
+STEP 3: ATTACH INTERNAL BRACING (5 minutes)
+─────────────────────────────────────────────
+
+This is the STRENGTH LAYER. Prevents wobbling.
+
+For each of the 4 walls:
+  1. Take a 1" diameter bracing piece (22" long)
+  2. Position horizontally inside the cage, 16" from bottom
+  3. Glue one end to interior of left post
+  4. Glue other end to interior of right post
+  5. This creates a horizontal brace at mid-height
+
+These braces run:
+  - Front wall: horizontal brace between front-left and front-right posts
+  - Back wall: horizontal brace between back-left and back-right posts
+  - Left wall: horizontal brace between front-left and back-left posts
+  - Right wall: horizontal brace between front-right and back-right posts
+
+CRITICAL: These braces are NOT visible from outside (they're inside) but ESSENTIAL
+for cage rigidity. Do NOT skip.
+
+Let glue set 2-3 minutes.
+
+
+STEP 4: TOP FRAME ASSEMBLY (15 minutes)
+─────────────────────────────────────────
+
+This caps the cage and completes the structure.
+
+For the top frame (1.5" PVC):
+  1. Apply glue to top ends of all 4 vertical posts
+  2. Attach front horizontal piece (48") to front-left + front-right posts
+  3. Attach back horizontal piece (48") to back-left + back-right posts
+  4. Attach left side piece (32") to front-left + back-left posts
+  5. Attach right side piece (32") to front-right + back-right posts
+
+Result: Complete rectangular frame, 48" × 32" × 32"
+
+HOLD each joint 30 seconds. Ensure top frame is LEVEL (not tilted).
+
+Allow 3-5 minutes for glue to cure before moving.
+
+
+STRUCTURAL CHECK (2 minutes):
+─────────────────────────────
+  ✓ Frame doesn't wobble when lightly pushed
+  ✓ All corners are 90° (no diamond shape)
+  ✓ Height is consistent (32" at all four corners)
+  ✓ Top and bottom frames are parallel (not twisted)
+
+If any fail: glue isn't set. Wait 5 more minutes.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+PART 3: MESH SCREENING INSTALLATION (25 MINUTES)
+═════════════════════════════════════════════════════════════════════════════════
+
+PREPARATION:
+─────────────
+  1. Lay out first mesh panel (Front wall, 48" × 32")
+  2. Position mesh at front of cage frame
+  3. Mesh should cover entire front opening (post to post)
+
+ATTACHING MESH — ZIP TIE METHOD (FASTEST):
+───────────────────────────────────────────
+
+DON'T glue mesh to frame. Use zip ties for speed + easy cleaning.
+
+Front Wall (48" wide × 32" tall):
+  1. Line up mesh along top edge of front frame
+  2. Starting at left, place zip tie around frame and mesh every 6 inches
+  3. Tighten each zip tie firmly (mesh should be taut, not loose)
+  4. Zip ties go on OUTSIDE of cage
+  5. Trim excess zip tie tails with scissors
+
+     Pattern: [ZT]----[ZT]----[ZT]----[ZT]----[ZT]----[ZT]----[ZT]----[ZT]
+     (8 zip ties across 48" width, ~6" spacing)
+
+  6. After top edge, do BOTTOM edge same way (8 more zip ties)
+  7. Then LEFT edge vertically (6 ties, 5" spacing)
+  8. Then RIGHT edge vertically (6 ties, 5" spacing)
+
+Total front wall: ~28 zip ties
+
+Back Wall (48" wide × 32" tall):
+  - Repeat exact same process
+  - Total: ~28 zip ties
+
+Left Side (32" wide × 32" tall):
+  - Top edge: 6 zip ties (~5" spacing)
+  - Bottom edge: 6 zip ties
+  - Left edge: 6 ties (vertical)
+  - Right edge: 6 ties (vertical)
+  - Total: ~24 zip ties
+
+Right Side (32" wide × 32" tall):
+  - Same as left side
+  - Total: ~24 zip ties
+
+TOTAL ZIP TIES USED: ~104
+(You have 60-80... This means REUSE zip ties. After attaching mesh fully,
+cut old ties and reuse to complete job. Reused ties still hold fine.)
+
+
+MESH OVERLAP & SEALING:
+──────────────────────
+At corners where two mesh panels meet:
+  1. Overlap by 2-3 inches
+  2. Zip tie both layers together
+  3. This creates a sealed edge (no gaps for escape)
+
+
+TOP OPENING (VENTILATION):
+──────────────────────────
+LEAVE TOP OPEN. Do NOT cover with mesh.
+
+Why: Sugar gliders need airflow. Top opening provides ventilation.
+Plus it's your access point for feeding/cleaning.
+
+OPTIONAL: Install 0.75" PVC perches across the top opening (see Part 4)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+PART 4: ACCESS DOOR INSTALLATION (10 MINUTES)
+═════════════════════════════════════════════════════════════════════════════════
+
+DOOR SIZE & POSITION:
+─────────────────────
+  - Location: Front wall, centered
+  - Height: 20" tall × 16" wide
+  - Center point: 16" from left edge, 12" from bottom
+
+WHY THIS SIZE: Large enough for hands/supplies to reach inside, small enough
+that your 2-3 gliders can't easily escape if door briefly opens.
+
+
+DOOR CONSTRUCTION:
+──────────────────
+Simple hinged frame:
+
+  1. Cut 4 pieces of 0.75" PVC:
+     - 2 pieces at 20" (vertical sides)
+     - 2 pieces at 16" (horizontal sides)
+
+  2. Glue these 4 pieces into a rectangle frame
+  3. Attach mesh screening to this rectangle (zip tie, same as walls)
+  4. Result: Door panel, 16" × 20", completely meshed
+
+  5. Mount to cage using two hinges:
+     - Use simple gate hinges (hardware store, ~$3-5 for pair)
+     - Mount on LEFT side of door
+     - Hinges bolt to the front left vertical post
+
+  6. Add catch/latch on right side:
+     - Simple barrel bolt (hardware store) OR
+     - Magnetic catch OR
+     - Heavy-duty velcro strap
+
+DOOR TEST:
+  - Open/close smoothly? ✓
+  - Mesh intact? ✓
+  - Latch holds firmly? ✓
+
+
+═══════════════════════════════════════════════════════════════════════════════
+PART 5: OPTIONAL CLIMBING PERCHES (FINAL 15 MINUTES — IF TIME ALLOWS)
+═════════════════════════════════════════════════════════════════════════════════
+
+Sugar gliders LOVE to climb. If you have 10-15 minutes left:
+
+PERCH INSTALLATION:
+───────────────────
+
+Horizontal Cross-Perches (inside cage):
+  1. Take 0.75" PVC perch pieces (24" lengths)
+  2. Position horizontally inside cage, at varying heights
+  3. Attach to left and right internal posts using zip ties
+  4. Position: One at 8" height, one at 16", one at 24"
+  5. Use 2-3 zip ties per perch (top, middle, bottom)
+
+Vertical Climbing Sticks (inside cage):
+  1. Take 0.75" PVC pieces (16" lengths)
+  2. Position vertically along interior walls
+  3. Zip tie every 6 inches to wall mesh
+  4. Create 2-3 vertical paths for climbing
+
+Sleeping Box (if time):
+  1. Cut 6" diameter PVC section (about 8" long) from spare PVC
+  2. Seal one end with PVC cap
+  3. Add entrance hole (2" diameter, drilled on side)
+  4. Zip tie inside cage, positioned 24" high on back wall
+  5. Line with fleece/cloth for comfort
+
+
+═══════════════════════════════════════════════════════════════════════════════
+FINAL SYSTEM CHECK (BEFORE GLIDERS ARRIVE)
+═════════════════════════════════════════════════════════════════════════════════
+
+□ Frame is solid (no wobble when pushed firmly)
+□ All mesh is taut (not sagging)
+□ No gaps at corners or seams (escape-proof)
+□ Door opens/closes and latches securely
+□ Top is open (ventilation confirmed)
+□ Bracing pieces are intact inside
+□ Zip ties are trimmed (no sharp edges)
+□ Structure can hold weight (test by gently pressing down on top)
+□ All glue joints have cured (no wet/tacky spots)
+
+ADD COMFORT ITEMS (LAST 5 MINUTES):
+─────────────────────────────────
+  - Fleece pouches for sleeping (zip tie them inside)
+  - Branches for climbing (real or artificial)
+  - Exercise wheel (hang from top frame)
+  - Feeding dishes (placement to be determined)
+  - Water bottle (mount on side mesh)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+TIMING BREAKDOWN (120 MINUTES TOTAL)
+═════════════════════════════════════════════════════════════════════════════════
+
+00:00-00:05 — Pre-work setup
+00:05-00:25 — Material cutting (20 min)
+00:25-01:05 — Frame assembly (40 min)
+  (05 min bottom frame)
+  (05 min vertical alignment)
+  (05 min bracing)
+  (15 min top frame)
+  (02 min structural check)
+01:05-01:30 — Mesh installation (25 min)
+01:30-01:40 — Access door (10 min)
+01:40-01:55 — Optional perches (15 min)
+01:55-02:00 — Final checks + buffer (5 min)
+
+TOTAL: 120 minutes
+
+
+═══════════════════════════════════════════════════════════════════════════════
+CRITICAL SAFETY NOTES
+═════════════════════════════════════════════════════════════════════════════════
+
+GLUE VENTILATION:
+  - Use PVC glue in well-ventilated area
+  - Fumes are strong—open windows/doors
+  - Avoid inhaling directly over glue container
+
+SHARP EDGES:
+  - After cutting, sand cut ends smoothly
+  - Burrs can injure sugar glider paws
+  - Run sandpaper lightly over all cut ends
+
+ZIP TIE TRIMMING:
+  - Cut all excess zip tie tails short
+  - Gliders could get caught on long tails
+  - Trim flush to the tie head
+
+PVC STABILITY:
+  - Don't rely on glue alone—zip ties add security
+  - Check all glued joints before gliders arrive
+  - Wobble = weak glue, apply EXTRA PVC glue to joints and re-clamp
+
+MESH INTEGRITY:
+  - Inspect for tears/holes after installation
+  - Patch any holes with mesh patch + zip ties
+  - No openings larger than 0.5 inches (escape risk)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+IF YOU'RE RUNNING BEHIND
+═════════════════════════════════════════════════════════════════════════════════
+
+Drop these in order to save time:
+  1. Perches (they're nice, not essential)
+  2. Sleeping box (hang a fleece pouch instead)
+  3. Internal bracing (single X-brace, not 4)
+  4. Door latch (use heavy velcro—faster to install)
+  5. Corner sealing (single layer mesh okay)
+
+MINIMUM FUNCTIONAL CAGE:
+  - Frame (bottom + vertical posts + top)
+  - Mesh on all 4 walls + zip ties
+  - Open top
+  - One access hole (no door frame needed immediately)
+
+Get this done. Comfort features come later.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+GLIDER ARRIVAL CHECKLIST
+═════════════════════════════════════════════════════════════════════════════════
+
+Before opening the transport box:
+  □ Cage is complete and structurally sound
+  □ All gaps sealed (especially corners/seams)
+  □ No sharp edges or protruding zip ties
+  □ Water bottle is full + installed
+  □ Food dishes are ready + filled
+  □ Sleeping area (pouch/box) is available
+  □ Room temperature is 65-75°F (critical for gliders)
+  □ Cage is in quiet, low-traffic area
+  □ No direct sunlight hitting cage
+  □ No drafts from AC/windows
+
+YOU'RE READY. GLIDERS ARE COMING HOME.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+POST-BUILD MAINTENANCE (AFTER DAY 1)
+═════════════════════════════════════════════════════════════════════════════════
+
+Check these after 24 hours:
+  - Any mesh tears or loosening?
+  - Any mesh seams separating at corners?
+  - Door latch holding consistently?
+  - Any PVC joints showing stress cracks?
+  - Zip ties still tight (retighten if loose)?
+  - Gliders showing signs of stress?
+
+Minor adjustments now prevent major issues later.
+
+
+═════════════════════════════════════════════════════════════════════════════════
+Questions? You're not done until gliders are inside and happy.
+Mista Boo, this cage will be SOLID and SPECTACULAR. LET'S GO.
+═════════════════════════════════════════════════════════════════════════════════

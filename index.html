@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Glider Habitat - Professional Build Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0a0a0f 0%, #111118 100%);
+            color: #e8eaed;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 40px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(0, 240, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(51, 102, 255, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .hero-content {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #00f0ff 0%, #3366ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #6b7280;
+            margin-bottom: 40px;
+        }
+
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 50px 0;
+        }
+
+        .download-card {
+            background: linear-gradient(135deg, rgba(0, 240, 255, 0.1) 0%, rgba(51, 102, 255, 0.1) 100%);
+            border: 2px solid rgba(0, 240, 255, 0.3);
+            border-radius: 12px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .download-card:hover {
+            border-color: #00f0ff;
+            box-shadow: 0 0 30px rgba(0, 240, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .download-icon {
+            font-size: 2.5rem;
+        }
+
+        .download-card h3 {
+            color: #00f0ff;
+            font-size: 1.3rem;
+        }
+
+        .download-card p {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #00f0ff 0%, #3366ff 100%);
+            color: #0a0a0f;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            align-self: flex-start;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .feature {
+            background: rgba(0, 240, 255, 0.05);
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .feature h4 {
+            color: #00f0ff;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .feature p {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .stat {
+            background: linear-gradient(135deg, rgba(255, 170, 0, 0.1) 0%, rgba(255, 45, 123, 0.1) 100%);
+            border: 1px solid rgba(255, 170, 0, 0.3);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #ffab00;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .section {
+            padding: 80px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+            padding: 40px;
+            text-align: center;
+            border-top: 1px solid rgba(0, 240, 255, 0.1);
+            margin-top: 80px;
+        }
+
+        .footer p {
+            color: #6b7280;
+            margin-bottom: 15px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+            .section { padding: 40px 20px; }
+            .section h2 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>🦗 SUGAR GLIDER HABITAT</h1>
+        <p>Complete Professional Build Guide</p>
+        <p style="color: #00f0ff; font-weight: 600; font-size: 1.1rem;">Everything you need to build in 120 minutes</p>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">48×32×32"</div>
+                <div class="stat-label">Dimensions</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">120 min</div>
+                <div class="stat-label">Build Time</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">2-3</div>
+                <div class="stat-label">Capacity</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">100%</div>
+                <div class="stat-label">Escape-Proof</div>
+            </div>
+        </div>
+
+        <h3 style="color: #ffffff; font-size: 1.5rem; margin: 50px 0 30px; text-align: center;">⬇️ DOWNLOAD YOUR PACKAGE</h3>
+
+        <div class="download-grid">
+            <a href="SUGAR_GLIDER_CAGE_VISUAL_TUTORIAL.html" class="download-card">
+                <div class="download-icon">🎨</div>
+                <h3>Visual Tutorial</h3>
+                <p>Beautiful step-by-step guide with gorgeous illustrations</p>
+                <button class="download-btn">📖 View/Download</button>
+            </a>
+
+            <a href="SUGAR_GLIDER_CAGE_EXECUTIVE_PRESENTATION.pptx" download class="download-card">
+                <div class="download-icon">📊</div>
+                <h3>PowerPoint Deck</h3>
+                <p>6-slide executive presentation for stakeholders</p>
+                <button class="download-btn">⬇️ Download PPTX</button>
+            </a>
+
+            <a href="SUGAR_GLIDER_CAGE_EXECUTIVE_SPECIFICATION.docx" download class="download-card">
+                <div class="download-icon">📋</div>
+                <h3>Specification Doc</h3>
+                <p>Professional documentation & compliance records</p>
+                <button class="download-btn">⬇️ Download DOCX</button>
+            </a>
+
+            <a href="SUGAR_GLIDER_CAGE_BUILD_GUIDE.txt" download class="download-card">
+                <div class="download-icon">🔧</div>
+                <h3>Build Guide</h3>
+                <p>Detailed step-by-step instructions (449 lines)</p>
+                <button class="download-btn">⬇️ Download TXT</button>
+            </a>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <h4>Complete</h4>
+                <p>Every detail covered</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <h4>Professional</h4>
+                <p>Enterprise quality</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <h4>Visual</h4>
+                <p>Gorgeous illustrations</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <h4>Fast</h4>
+                <p>2-hour build time</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: linear-gradient(135deg, rgba(0, 240, 255, 0.03) 0%, rgba(51, 102, 255, 0.03) 100%);">
+    <h2>🚀 What You're Getting</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px;">
+        <div>
+            <h3 style="color: #00f0ff; margin-bottom: 15px;">📖 Visual Tutorial</h3>
+            <p style="color: #b0b5c0;">Beautiful, interactive HTML guide with SVG illustrations for every step. View directly in browser or download.</p>
+        </div>
+        <div>
+            <h3 style="color: #00f0ff; margin-bottom: 15px;">🎯 Executive Presentation</h3>
+            <p style="color: #b0b5c0;">Professional PowerPoint deck with KPIs, timeline, and materials for board-level presentations.</p>
+        </div>
+        <div>
+            <h3 style="color: #00f0ff; margin-bottom: 15px;">📋 Specification Document</h3>
+            <p style="color: #b0b5c0;">Formal Word document for compliance, archives, and stakeholder documentation.</p>
+        </div>
+        <div>
+            <h3 style="color: #00f0ff; margin-bottom: 15px;">🔧 Detailed Build Guide</h3>
+            <p style="color: #b0b5c0;">449-line tactical guide with exact measurements, phases, and troubleshooting steps.</p>
+        </div>
+        <div>
+            <h3 style="color: #00f0ff; margin-bottom: 15px;">✓ Zero Wobble</h3>
+            <p style="color: #b0b5c0;">Dual-layer bracing ensures structural integrity. No compromises on quality.</p>
+        </div>
+        <div>
+            <h3 style="color: #00f0ff; margin-bottom: 15px;">✓ 100% Escape-Proof</h3>
+            <p style="color: #b0b5c0;">Overlapped mesh construction prevents any escape routes. Completely secure.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>🎯 Perfect For</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px;">
+        <div style="background: rgba(0, 240, 255, 0.08); padding: 30px; border-radius: 12px; border: 1px solid rgba(0, 240, 255, 0.2);">
+            <h3 style="color: #00f0ff; margin-bottom: 15px;">👔 Executives & Stakeholders</h3>
+            <p style="color: #b0b5c0;">Use the PowerPoint presentation to get approval and buy-in. Professional, polished, comprehensive.</p>
+        </div>
+        <div style="background: rgba(0, 240, 255, 0.08); padding: 30px; border-radius: 12px; border: 1px solid rgba(0, 240, 255, 0.2);">
+            <h3 style="color: #00f0ff; margin-bottom: 15px;">👨‍🔧 DIY Builders</h3>
+            <p style="color: #b0b5c0;">Follow the visual tutorial on your phone or tablet. Beautiful, easy to understand, step-by-step.</p>
+        </div>
+        <div style="background: rgba(0, 240, 255, 0.08); padding: 30px; border-radius: 12px; border: 1px solid rgba(0, 240, 255, 0.2);">
+            <h3 style="color: #00f0ff; margin-bottom: 15px;">📚 Documentation Teams</h3>
+            <p style="color: #b0b5c0;">Archive the specification document for compliance, audits, and future reference.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: linear-gradient(135deg, rgba(255, 170, 0, 0.05) 0%, rgba(255, 45, 123, 0.05) 100%);">
+    <h2>✨ Quality Standards</h2>
+    <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <p style="color: #b0b5c0; font-size: 1.1rem; line-height: 2;">
+            ✓ Non-toxic materials (Schedule 40 PVC)<br>
+            ✓ No sharp edges or burrs<br>
+            ✓ 100% escape-proof construction<br>
+            ✓ Optimal ventilation (open top design)<br>
+            ✓ Dual-layer structural bracing<br>
+            ✓ Professional documentation<br>
+            ✓ Complete compliance trail<br>
+            ✓ Ready for immediate deployment
+        </p>
+    </div>
+</section>
+
+<section class="footer">
+    <h3 style="color: #00f0ff; margin-bottom: 20px; font-size: 1.5rem;">Ready to Build?</h3>
+    <p>Download the Visual Tutorial and follow the 5 phases in 120 minutes.</p>
+    <p style="color: #00f0ff; font-weight: 700; font-size: 1.1rem;">Everything you need is here. Everything you need is free. Everything you need is professional.</p>
+    <p style="margin-top: 30px; color: #666; font-size: 0.9rem;">Built for Mista Boo | Fenix Digital Enterprise LLC | 2026</p>
+</section>
+
+</body>
+</html>
